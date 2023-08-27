@@ -94,6 +94,7 @@ header {
 /* Services */
 
 .services-container {
+    overflow: auto;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -140,6 +141,11 @@ header {
     width: 100%;
 }
 
+.icon-bg {
+    width: 120px;
+    height: 120px;
+}
+
 .svg-icon {
     color: white;
     top: 32%;
@@ -169,15 +175,18 @@ header {
 /* Portfolio */
 
 .portfolio-container {
+    overflow: auto;
     background-color: rgb(248, 249, 250);
-    padding-top: 6rem;
+    padding: 6rem 0;
 }
 
 .headings-portfolio {
+    padding-bottom: 3.75rem;
     text-align: center;
 }
 
 .portfolio-projects {
+    overflow: auto;
     margin-left: 4.375rem;
 }
 
@@ -186,7 +195,6 @@ header {
     width: 30%;
     float: left;
 }
-
 
 .img-portfolio {
     width: 26rem;
@@ -209,4 +217,252 @@ header {
     font-style: italic;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #6c757d;
+}
+
+/* Team */
+
+#team {
+    background-color: rgb(248, 249, 250);
+}
+
+.team-container {
+    padding: 6rem 0;
+}
+
+.text-center {
+    align-content: center;
+}
+
+.team-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-subheading {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem;
+}
+
+.team-members {
+    height: 400px;
+    overflow: auto;
+    margin-left: 20%;
+}
+
+.team-member {
+    margin-right: 5.625rem;
+    text-align: center;
+    float: left;
+}
+
+.circle-img {
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.text-muted {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    color: #6c757d;
+}
+
+.btn-icon {
+    margin-right: 7px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+svg {
+    color: #ffff;
+    width: 15px;
+    height: 15px;
+}
+
+
+.paragraph {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.75;
+    color: #6c757d;
+    margin-top: 70px;
+}
+
+/* Clients */
+
+.clients-container {
+    padding: 4rem 0;
+    margin-left: 17%;
+}
+
+.logo-image {
+    margin-right: 3.125rem;
+    width: 13.75rem;
+    height: 3.125rem;
+}
+
+#contact {
+    background-color: #212529;
+    background-image: url('/src/img/map-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-container {
+    padding: 6rem;
+    overflow: hidden;
+}
+
+.text-heading {
+    text-align: center;
+}
+
+.contact-heading {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.contact-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem;
+    color: #6c757d;
+}
+
+.contact-form {
+    margin-bottom: 3rem;
+}
+
+.inputs {
+    float: left;
+    width: 40%;
+}
+
+.form-group {
+
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: auto;
+    padding: 1.25rem;
+}
+
+.inputs-text {
+    float: right;
+    width: 40%;
+}
+
+.text-input {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    width: 100%;
+    height: 100%;
+    min-height: 10rem;
+    padding: 1.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.message {
+    width: 31.25rem;
+    text-align: center;
+}
+
+.btn-message {
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffc800;
+    padding: 1.25rem 2.5rem;
+    font-family: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid #ffc800;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-container {
+    margin: 1rem 6rem;
+}
+
+.footer-text {
+    float: left;
+
+}
+
+
+.btn-icon {
+    padding: 11px 19px;
+}
+
+.svg-icon {
+    height: 20px;
+}
+
+.footer-links {
+    float: right;
+}
+
+.text-link {
+    color: #212529;
+    padding-right: 20px;
+    text-decoration: none;
+    float: left;
 }
